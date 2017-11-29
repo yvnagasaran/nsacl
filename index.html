@@ -156,7 +156,10 @@ Selina Chu, Shrikanth Narayanan, and CC Jay Kuo, “Environmental sound recognit
 					<div class="text">
 
 						<!-- Start edit here  -->
-						The plots of sample sounds of 4 classes shown below:
+						
+These features of each audio clip is stored row wise.A total number of 80 test audio signals,20 from each  are each class are used for feature extraction.So totally an 80×11 matrix is obtained which is our datasetexcel file.This means that each row is a 11 dimentional point mapping to the respective audio clip from which it was computed.This is used as the input argument to kmeans clustering algorithm.By using each test sample we calculated the Euclidian distance from the centroids of 4 clusters since we used 4 classes are computed.The nearest centroid indicates that this particular test sample used belongs to the class of that nearest centroid.
+In order to improve accuracy each feature is used for testing and checked.In a similar way we found that for pairs of 4 classes i.e dog & clap got labelled/differentiated by spectrall rolloff with 100% accuracy, Siren and Churchbell by Spectral kurtosis,Clap and churchbells by Rolloff,etc.
+Basic audio vs frequency plots of sounds/clips of 4 classes are as shown below:
 						Dog:<div class="image">
 
 						<!-- Start edit here  -->						
@@ -187,8 +190,7 @@ Selina Chu, Shrikanth Narayanan, and CC Jay Kuo, “Environmental sound recognit
 </div>
 
 						
-						In each sample the silence removed by setting an Amplitude threshold.Framing is done by taking a framelength of 25msec to 50msec for each wavfile.The reshaped signal after framing is used to get the spectrogram using short time fouriesr transform.Windowlength is precisely taken for each and every sample based on getting the desired Spectrogram.Spectrograms of all the 4 classes are as below:
-						
+						In each sample the silence removed by setting an Amplitude threshold.Framing is done by taking a framelength of 25msec to 50msec for each wavfile.The reshaped signal after framing is used to get the spectrogram using short time fouriesr transform.Windowlength is precisely taken for each and every sample based on getting the desired Spectrogram.Spectrograms of all the 4 classes are as below:				
 					dog:<div class="image">
 
 						<!-- Start edit here  -->						
