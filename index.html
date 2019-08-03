@@ -275,7 +275,7 @@ Basic audio vs frequency plots of sounds/clips of 4 classes are as shown below:
 
 </div>
 						
-					Each spectral feature is computes with input argument of Magnitude spectrum from the above computed spectrogram.for every feature the output values of each sample of all the classes are store in dataset.This dataset matrix of totally 120 samples is further used for clustering(kmeans)
+					Each spectral feature is computes with input argument of Magnitude spectrum from the above computed spectrogram.for every feature the output values of each sample of all the classes are store in dataset.This dataset matrix of totally 120 samples is further used for KNN
 						
 					<!-- Stop edit here -->
 
@@ -302,7 +302,7 @@ Among the four classes which we classified,each pair of classes can be different
 					<div class="text">
 
 						<!-- Start edit here  -->
-						(uniform effect) often produce clusters with relatively uniform size even if the input data have different cluster size. spherical assumption hard to satisfied: correlation between features break it, would put extra weights on correlated features(should take actions depending on the problems); cannot find non-convex clusters or clusters with unusual shapes;(different densities) may work poorly with clusters with different densities but spherical shape.
+						(uniform effect) often produce classes with relatively uniform size even if the input data have different size. spherical assumption hard to satisfied: correlation between features break it, would put extra weights on correlated features(should take actions depending on the problems); cannot find non-convex classes or those with unusual shapes;(different densities) may work poorly with classes with different densities but spherical shape.
 In order to overcome these kind of limitations ,better classifiers can be used to increase accuracy .
 
 						<!-- Stop edit here -->
